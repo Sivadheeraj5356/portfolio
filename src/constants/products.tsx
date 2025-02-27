@@ -12,6 +12,8 @@ import portfolioTutorai2 from "../../public/images/portfolio-tutorai2.png";
 import portfolioMockai2 from "../../public/images/portfolio-mockai2.png";
 import portfolioCodedevai from "../../public/images/portfolio-codedevai.png"
 import portfolioCodedevai2 from "../../public/images/portfolio-codedevai2.png"
+import portfolioNexttodo from "../../public/images/portfolioNexttodo.png"
+import portfolioNexttodo2 from "../../public/images/portfolioNexttodo2.png"
 export const products = [
   {
     href: "https://mock-ai-one.vercel.app/",
@@ -43,7 +45,7 @@ This Mock AI Interview Platform is your ultimate AI-powered coach, helping you s
     ),
   },
   {
-    href: "https://codedevAI.vercel.app/",
+    href: "https://github.com/Sivadheeraj5356/CodeDevIDE",
     title: "CodeDevAI",
     source:"https://github.com/Sivadheeraj5356/CodeDevIDE",
     description:
@@ -72,7 +74,7 @@ With CodeDevAI, you can create stunning websites in minutes, without the hassle 
     ),
   },
   {
-    href: "https://gomoonbeam.com",
+    href: "https://github.com/Sivadheeraj5356/Tutor-AI",
     title: "Tutor AI",
     source:"https://github.com/Sivadheeraj5356/Tutor-AI",
     description:
@@ -99,7 +101,7 @@ Code Assistance: Helps with programming-related queries, debugging code, and exp
     ),
   },
   {
-    href: "https://tailwindmasterkit.com",
+    href: "https://github.com/Sivadheeraj5356/Memories",
     title: "Memories",
     source:"https://github.com/Sivadheeraj5356/Memories",
     description:
@@ -129,7 +131,7 @@ Privacy & Security: Lock sensitive notes with a password or biometric authentica
     ),
   },
   {
-    href: "https://tailwindmasterkit1.com",
+    href: "https://github.com/Sivadheeraj5356/pomodoro-app",
     title: "Pomodoro App",
     source:"https://github.com/Sivadheeraj5356/pomodoro-app",
     description:
@@ -159,7 +161,7 @@ Ideal for students, professionals, and anyone looking to improve time management
     ),
   },
   {
-    href: "https://tailwindmasterkit2.com",
+    href: "https://github.com/Sivadheeraj5356",
     title: "Ochi Design",
     source:"https://github.com/Sivadheeraj5356",
     description:
@@ -190,22 +192,28 @@ With a focus on aesthetics and functionality, Ochi Design reflects the agency’
     ),
   },
   {
-    href: "https://tailwindmasterkit3.com",
+    href: "https://github.com/Sivadheeraj5356/next-fullstack",
     title: "Todo App",
-    source:"https://github.com/Sivadheeraj5356/",
+    source:"https://github.com/Sivadheeraj5356/next-fullstack",
     description:
       "Todo application in Next js with Tailwind css with CRUD operations",
-    thumbnail: sidefolioTailwindMasterKit,
-    images: [sidefolioTailwindMasterKit, sidefolioTailwindMasterKit2],
+    thumbnail: portfolioNexttodo,
+    images: [portfolioNexttodo, portfolioNexttodo2],
     stack: ["Nextjs", "Tailwindcss"],
-    slug: "tailwindmasterkit",
+    slug: "NextTodo",
     content: (
       <div>
         <p>
+        The Todo App is a simple, user-friendly task management application designed to help you stay organized, focused, and productive. It allows you to create, edit, and delete tasks, set deadlines, and track your progress with ease, making it an essential tool for personal and professional task management.
          {" "}
         </p>
         <p>
-          
+        Key Features: <br />
+Task Creation & Editing: Add new tasks, set priorities, and update task details as needed. <br />
+Deadline Management: Assign due dates to tasks, set reminders, and track upcoming deadlines. <br />
+Task Categories & Tags: Organize tasks by category, label, or project for better visibility and organization. <br />
+Task Status & Progress: Mark tasks as complete, in progress, or pending to track your workflow. <br />
+Search & Filter: Quickly find tasks using search queries, filters, and sorting options. <br />  
         </p>{" "}
       </div>
     ),
