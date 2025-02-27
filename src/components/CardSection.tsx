@@ -22,7 +22,7 @@ export function CardSection() {
        <CardDescription></CardDescription>
            </CardHeader>
          <CardContent>
-           <p className="text-base mx-10 text-center">We'll collaborate to map out your website's goals, target audience, and key functionalities. We'll discuss things like site structure, navigation, and content requirements.</p>
+           <p className="text-base mx-10 text-center">We&apos; ll collaborate to map out your website&apos;s goals, target audience, and key functionalities. We&apos;ll discuss things like site structure, navigation, and content requirements.</p>
          </CardContent>
       <CardFooter>
           {/* <p>Card Footer</p> */}
@@ -50,7 +50,7 @@ export function CardSection() {
        <CardDescription></CardDescription>
            </CardHeader>
          <CardContent>
-           <p className="text-base mx-10 text-center">This is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from the ground up.</p>
+           <p className="text-base mx-10 text-center">This is where the magic happens! Based on the approved design, I&apos;ll translate everything into functional code, building your website from the ground up.</p>
          </CardContent>
       <CardFooter>
           {/* <p>Card Footer</p> */}

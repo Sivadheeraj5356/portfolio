@@ -124,7 +124,7 @@ export const TechStack = () => {
       </Heading>
       <div className="flex flex-wrap sm:gap-7 max-sm:ml-5">
         {stack.map((item, index) => (
-          <div className="flex items-center">
+          <div className="flex items-center" key={index}>
           <Image
             src={item.src}
             key={index}

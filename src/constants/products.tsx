@@ -91,7 +91,7 @@ With CodeDevAI, you can create stunning websites in minutes, without the hassle 
         </p>
         <p>
         AI-Powered Tutoring: Provides real-time explanations, answers questions, and offers step-by-step solutions for a wide range of subjects, including math, science, coding, and languages. <br />
-Personalized Learning Paths: Adapts to the user's learning style and progress, recommending customized lessons and exercises. <br />
+Personalized Learning Paths: Adapts to the user&apos;s learning style and progress, recommending customized lessons and exercises. <br />
 24/7 Availability: Functions as an on-demand tutor, available anytime to help with homework, exam preparation, or general learning. <br />
 Interactive Quizzes & Assessments: Tests knowledge retention and tracks progress over time with AI-generated quizzes. <br />
 Multimodal Learning: Supports text-based explanations, voice assistance, and even interactive diagrams to enhance understanding. <br />
