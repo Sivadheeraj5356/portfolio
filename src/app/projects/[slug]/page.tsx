@@ -9,7 +9,6 @@ type Props = {
   params: { slug: string };
 };
 
-// ✅ Fix: Removed unnecessary `await`
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = params;
   const product = products.find((p) => p.slug === slug) as Product | undefined;
@@ -26,8 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       };
 }
 
-// ✅ Fix: Stopping execution after redirect
-export default function SingleProjectPage({ params }: Props) {
+export default async function SingleProjectPage({ params }: Props) {
   const { slug } = params;
   const product = products.find((p) => p.slug === slug);
 
