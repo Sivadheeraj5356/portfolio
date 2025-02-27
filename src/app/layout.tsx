@@ -48,13 +48,7 @@ const links = [
     ),
     href: "/projects",
   },
-  {
-    title: "Blog",
-    icon: (
-      <IconArticle className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    ),
-    href: "/blog",
-  },
+  
   {
     title: "Contact",
     icon: (
