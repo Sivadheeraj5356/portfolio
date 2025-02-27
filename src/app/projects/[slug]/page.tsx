@@ -5,11 +5,13 @@ import { Product } from "@/types/products";
 import { Metadata } from "next";
 import { redirect } from "next/navigation";
 
-type Props = {
+// Update the Props type to be more specific for Next.js 15
+type PageProps = {
   params: { slug: string };
+  searchParams: Record<string, string | string[] | undefined>;
 };
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = params;
   const product = products.find((p) => p.slug === slug) as Product | undefined;
 
@@ -25,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       };
 }
 
-export default async function SingleProjectPage({ params }: Props) {
+export default async function SingleProjectPage({ params }: PageProps) {
   const { slug } = params;
   const product = products.find((p) => p.slug === slug);
 
