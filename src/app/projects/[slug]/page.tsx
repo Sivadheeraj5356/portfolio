@@ -5,9 +5,7 @@ import { Product } from "@/types/products";
 import { Metadata } from "next";
 import { redirect } from "next/navigation";
 
-// Define a helper function to safely access params
 async function getSlug(params: any): Promise<string> {
-  // If params is a Promise, await it
   const resolvedParams = params instanceof Promise ? await params : params;
   return resolvedParams.slug;
 }

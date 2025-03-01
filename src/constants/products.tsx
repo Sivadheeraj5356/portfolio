@@ -45,7 +45,7 @@ This Mock AI Interview Platform is your ultimate AI-powered coach, helping you s
     ),
   },
   {
-    href: "https://github.com/Sivadheeraj5356/CodeDevIDE",
+    href: "https://codedevai.vercel.app/",
     title: "CodeDevAI",
     source:"https://github.com/Sivadheeraj5356/CodeDevIDE",
     description:
@@ -74,7 +74,7 @@ With CodeDevAI, you can create stunning websites in minutes, without the hassle 
     ),
   },
   {
-    href: "https://github.com/Sivadheeraj5356/Tutor-AI",
+    href: "https://tutor-ai-red.vercel.app/",
     title: "Tutor AI",
     source:"https://github.com/Sivadheeraj5356/Tutor-AI",
     description:
