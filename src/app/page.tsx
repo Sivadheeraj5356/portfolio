@@ -7,7 +7,6 @@ import { TechStack } from "@/components/TechStack";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { InfiniteMovingCardsDemo } from "@/components/InfiniteMovingCardsDemo"
 import  ContactFooter  from "@/components/ContactFooter"
-import FinalCanvasEffect from "@/components/FinalCanvasEffect"
 import CardSection from "@/components/CardSection"
 
 
@@ -63,7 +62,6 @@ I thrive on challenges, passionate about learning new skills, and dedicated to w
       <TechStack />
       </div>
     </Container>
-    {/* <FinalCanvasEffect /> */}
     <CardSection />
       <InfiniteMovingCardsDemo />
       <ContactFooter  />
