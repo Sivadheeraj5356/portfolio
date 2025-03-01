@@ -5,14 +5,15 @@ import { Product } from "@/types/products";
 import { Metadata } from "next";
 import { redirect } from "next/navigation";
 
-// Remove the custom type definition entirely
-
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = params;
+  // Await the params
+  const resolvedParams = await params;
+  const { slug } = resolvedParams;
+  
   const product = products.find((p) => p.slug === slug) as Product | undefined;
 
   return product
@@ -27,13 +28,15 @@ export async function generateMetadata({
       };
 }
 
-// Let Next.js infer the types from its own generated definitions
 export default async function SingleProjectPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const { slug } = params;
+  // Await the params
+  const resolvedParams = await params;
+  const { slug } = resolvedParams;
+  
   const product = products.find((p) => p.slug === slug);
 
   if (!product) {
