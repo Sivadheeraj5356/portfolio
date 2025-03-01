@@ -5,15 +5,15 @@ import { Product } from "@/types/products";
 import { Metadata } from "next";
 import { redirect } from "next/navigation";
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}): Promise<Metadata> {
-  // Await the params
-  const resolvedParams = await params;
-  const { slug } = resolvedParams;
-  
+// Define a helper function to safely access params
+async function getSlug(params: any): Promise<string> {
+  // If params is a Promise, await it
+  const resolvedParams = params instanceof Promise ? await params : params;
+  return resolvedParams.slug;
+}
+
+export async function generateMetadata(props: any): Promise<Metadata> {
+  const slug = await getSlug(props.params);
   const product = products.find((p) => p.slug === slug) as Product | undefined;
 
   return product
@@ -28,15 +28,8 @@ export async function generateMetadata({
       };
 }
 
-export default async function SingleProjectPage({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
-  // Await the params
-  const resolvedParams = await params;
-  const { slug } = resolvedParams;
-  
+export default async function SingleProjectPage(props: any) {
+  const slug = await getSlug(props.params);
   const product = products.find((p) => p.slug === slug);
 
   if (!product) {
