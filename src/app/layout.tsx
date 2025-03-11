@@ -74,6 +74,7 @@ const links = [
       <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
     href: "https://x.com/siva_dheeraj_",
+    target : "_blank"
   },
   {
     title: "GitHub",
@@ -81,6 +82,7 @@ const links = [
       <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
     href: "https://github.com/Sivadheeraj5356",
+    target : "_blank"
   },
   
   
