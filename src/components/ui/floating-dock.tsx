@@ -17,7 +17,7 @@ export const FloatingDock = ({
   desktopClassName,
   mobileClassName,
 }: {
-  items: { title: string; icon: React.ReactNode; href: string }[];
+  items: { title: string; icon: React.ReactNode; href: string ; target?:string ; rel?:string }[];
   desktopClassName?: string;
   mobileClassName?: string;
 }) => {
@@ -33,7 +33,7 @@ const FloatingDockMobile = ({
   items,
   className,
 }: {
-  items: { title: string; icon: React.ReactNode; href: string }[];
+  items: { title: string; icon: React.ReactNode; href: string; target?:string ; rel?:string}[];
   className?: string;
 }) => {
   const [open, setOpen] = useState(false);
@@ -65,6 +65,8 @@ const FloatingDockMobile = ({
                 <Link
                   href={item.href} 
                   key={item.title}
+                  target={item.target}
+                  rel={item.rel}
                   className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-900 flex items-center justify-center"
                 >
                   <div className="h-4 w-4">{item.icon}</div>
@@ -88,7 +90,7 @@ const FloatingDockDesktop = ({
   items,
   className,
 }: {
-  items: { title: string; icon: React.ReactNode; href: string }[];
+  items: { title: string; icon: React.ReactNode; href: string ; target?:string ; rel?:string}[];
   className?: string;
 }) => {
   let mouseX = useMotionValue(Infinity);
@@ -113,13 +115,17 @@ function IconContainer({
   title,
   icon,
   href,
+  target,
+  rel,
 }: {
   mouseX: MotionValue;
   title: string;
   icon: React.ReactNode;
   href: string;
+  target?: string;
+  rel?: string;
 }) {
-  let ref = useRef<HTMLDivElement>(null);
+  let ref = useRef<HTMLAnchorElement>(null);
 
   let distance = useTransform(mouseX, (val) => {
     let bounds = ref.current?.getBoundingClientRect() ?? { x: 0, width: 0 };
@@ -162,13 +168,15 @@ function IconContainer({
   const [hovered, setHovered] = useState(false);
 
   return (
-    <Link href={href}>
-      <motion.div
+    <Link href={href} passHref legacyBehavior>
+      <motion.a
         ref={ref}
         style={{ width, height }}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         className="aspect-square rounded-full bg-gray-200 dark:bg-neutral-800 flex items-center justify-center relative"
+        target={target}
+        rel={rel}
       >
         <AnimatePresence>
           {hovered && (
@@ -188,7 +196,7 @@ function IconContainer({
         >
           {icon}
         </motion.div>
-      </motion.div>
+      </motion.a>
     </Link>
   );
 }

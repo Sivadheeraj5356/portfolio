@@ -18,6 +18,7 @@ import {
   IconMail,
   IconMessage2,
   IconNewSection,
+  IconClipboardText,
   IconTerminal2,
 } from "@tabler/icons-react";
 import Image from "next/image";
@@ -55,6 +56,16 @@ const links = [
       <IconMail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
     href: "/contact",
+  },
+  
+  {
+    title: "Resume",
+    icon: (
+      <IconClipboardText className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: "/resume.pdf",
+    target : "_blank",
+    rel : "noopener noreferrer"
   },
 
   {
@@ -100,7 +111,7 @@ export default function RootLayout({
           <div className="flex-1 bg-black min-h-screen lg:rounded-tl-xl border border-transparent lg:border-neutral-700 overflow-y-auto">
             {children}
             <Footer />
-            <div className="flex items-center justify-center fixed bottom-5 scale-110 z-999 w-full">
+            <div className="flex items-center justify-center fixed bottom-5 scale-125 z-999 w-full">
       <FloatingDock
         items={links}
       />
