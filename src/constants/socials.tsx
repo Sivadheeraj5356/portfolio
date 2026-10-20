@@ -12,7 +12,7 @@ export const socials = [
     icon: IconBrandTwitter,
   },
   {
-    href: 'https://www.linkedin.com/in/sivadheeraj',
+    href: 'https://www.linkedin.com/in/sivadheeraj?utm_source=share_via&utm_content=profile&utm_medium=member_android',
     label: 'LinkedIn',
     icon: IconBrandLinkedin,
   },
