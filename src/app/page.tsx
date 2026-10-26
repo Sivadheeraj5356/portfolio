@@ -5,7 +5,6 @@ import { Paragraph } from "@/components/Paragraph";
 import { Products } from "@/components/Products";
 import { TechStack } from "@/components/TechStack";
 import { SparklesCore } from "@/components/ui/sparkles";
-import { InfiniteMovingCardsDemo } from "@/components/InfiniteMovingCardsDemo"
 import  ContactFooter  from "@/components/ContactFooter"
 import CardSection from "@/components/CardSection"
 
@@ -65,7 +64,6 @@ I thrive on challenges, passionate about learning new skills, and dedicated to w
       </div>
     </Container>
     <CardSection />
-      <InfiniteMovingCardsDemo />
       <ContactFooter  />
     
     </>
