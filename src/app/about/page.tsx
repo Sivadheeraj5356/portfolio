@@ -6,14 +6,17 @@ import { Products } from "@/components/Products";
 import { Metadata } from "next";
 import Image from "next/image";
 
+
 import { motion } from "framer-motion";
 import About from "@/components/About";
+
 
 export const metadata: Metadata = {
   title: "About | Siva Dheeraj",
   description:
-    "Siva Dheeraj is a developer, writer and speaker. He is a digital nomad and travels around the world while working remotely.",
+    "Siva Dheeraj is a full-stack engineer building LLM systems, agent evaluation tooling and web products.",
 };
+
 
 export default function AboutPage() {
   const images = [
@@ -30,3 +33,4 @@ export default function AboutPage() {
     </Container>
   );
 }
+
