@@ -1,0 +1,16 @@
+# Siva Dheeraj
+
+> Siva Dheeraj (Siva Dheeraj Ethamsetti) is a full-stack developer and founding engineer / technical lead at Applied Work (appliedwork.ai), an AI data and compute company. He builds LLM systems, RAG pipelines, agent evaluation tooling, GTM automation and web products. Based in Surat, India.
+
+## Pages
+- / - home and featured projects
+- /about - background and experience
+- /projects - selected work (AgentForge, SignalDesk, PlayGarden, QuizSift and more)
+- /resume - resume
+- /contact - contact links
+
+## Links
+- Portfolio: https://sivadheeraj.vercel.app/
+- 3D portfolio: https://sivadheeraj5356.github.io/3d-portfolio/
+- GitHub: https://github.com/Sivadheeraj5356
+- LinkedIn: https://www.linkedin.com/in/sivadheeraj
