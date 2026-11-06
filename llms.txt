@@ -1,0 +1,9 @@
+# Siva Dheeraj - Portfolio
+
+> Portfolio of Siva Dheeraj, forward deployed engineer and founding engineer at Applied Work (appliedwork.ai). He builds LLM systems, agent evaluations, GTM tooling and web products. Based in Surat, India.
+
+## Links
+- Main portfolio: https://sivadheeraj.vercel.app/
+- 3D portfolio: https://sivadheeraj5356.github.io/3d-portfolio/
+- GitHub: https://github.com/Sivadheeraj5356
+- LinkedIn: https://www.linkedin.com/in/sivadheeraj
