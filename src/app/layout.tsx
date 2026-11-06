@@ -88,9 +88,29 @@ const links = [
   
 ]
 export const metadata: Metadata = {
-  title: "Siva Dheeraj",
+  metadataBase: new URL("https://sivadheeraj.vercel.app"),
+  title: {
+    default: "Siva Dheeraj | Full-Stack Developer",
+    template: "%s | Siva Dheeraj",
+  },
   description:
-    "Siva Dheeraj is a developer. He is a digital nomad and travels around the world while working remotely.",
+    "Siva Dheeraj is a full-stack developer and founding engineer at Applied Work, building LLM systems, agent evaluations, GTM tooling and web products. Based in Surat, India.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    url: "https://sivadheeraj.vercel.app/",
+    siteName: "Siva Dheeraj",
+    title: "Siva Dheeraj | Full-Stack Developer",
+    description:
+      "Full-stack developer and founding engineer at Applied Work. LLM systems, agent evaluations, GTM tooling and web products.",
+  },
+  twitter: {
+    card: "summary",
+    title: "Siva Dheeraj | Full-Stack Developer",
+    description:
+      "Full-stack developer and founding engineer at Applied Work. LLM systems, agent evaluations, GTM tooling and web products.",
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({
@@ -100,6 +120,27 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            name: "Siva Dheeraj",
+            alternateName: "Siva Dheeraj Ethamsetti",
+            jobTitle: "Founding Engineer",
+            worksFor: { "@type": "Organization", name: "Applied Work", url: "https://appliedwork.ai" },
+            description: "Full-stack developer building LLM systems, agent evaluations, GTM tooling and web products.",
+            address: { "@type": "PostalAddress", addressLocality: "Surat", addressCountry: "IN" },
+            url: "https://sivadheeraj.vercel.app/",
+            sameAs: [
+              "https://github.com/Sivadheeraj5356",
+              "https://www.linkedin.com/in/sivadheeraj",
+              "https://sivadheeraj5356.github.io/3d-portfolio/",
+            ],
+          }),
+        }}
+      />
       <body
         className={twMerge(
           inter.className,
